@@ -28,7 +28,7 @@ def word_selection(sen_lengths, words):
     ipsum_sentences = [ [] for i in range(len(sen_lengths)) ] # Creates a list of empty lists of len(sen_lengths)
     for sents in range(len(ipsum_sentences)):
         for rand_words in range(sen_lengths[sents]): # sen_lengths[sents] is the sentence length provided by num_of_sentences list
-            ipsum_sentences[sents].append(words[randint(0, len(words) - 1)]) # There is an occasional problem involving this line
+            ipsum_sentences[sents].append(words[randint(0, len(words) - 1)])
             # /\ This appends each list in ipsum_sentences with a random word from words.
     # print (ipsum_sentences)
     return ipsum_sentences
